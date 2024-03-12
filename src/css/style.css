@@ -1,0 +1,145 @@
+body {
+    background-color: #1b1f27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divider {
+    width: 0px; /* Largura da linha de divisão */
+    background-color: #fff; /* Cor da linha de divisão */
+    border-radius: 1px; /* Metade da largura para criar uma borda redonda */
+    height: 100%;
+    margin: 0 1px; /* Espaçamento entre as seções */
+}
+
+.imformacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imformacoes img {
+    width: 110px;
+    border-radius: 10px;
+}
+
+.imformacoes ul{
+    color: #cbd0f7;
+}
+
+.imformacoes p{
+    color: #cbd0f7;
+}
+ 
+.imformacoes a{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.imformacoes a:hover{
+    color: #c93939;
+    text-decoration: underline;
+}
+
+.area-imformacoes, .area-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181920;
+    width: 380px;
+    min-height: 380px;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+
+/*Login*/
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login input {
+    margin-top: 10px;
+    background: #252a34;
+    color: #cbd0f7;
+    padding-left: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.login img {
+    width: 70px;
+    height: auto;
+    position: relative;
+    animation: flutuar 2s infinite alternate ease-in-out;
+    border-radius: 50px;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);
+    }
+}
+
+.login p {
+    margin-top: 30px;
+    color: #cbd0f7;
+}
+
+.login a {
+    color: #ff0000;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.login a:hover {
+    color: #c93939;
+    text-decoration: underline;
+}
+
+input::placeholder {
+    color: #cbd0f7;
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    display: block;
+    background: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    background-color: #c93939;
+}
+
+.login .textfield {
+    display: flex;
+    flex-direction: column;
+}
