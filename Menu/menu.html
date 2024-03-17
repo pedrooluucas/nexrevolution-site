@@ -13,81 +13,95 @@
 </head>
 <body>
     
-    <nav class="menu-lateral">
+    <nav id="sidebar">
+        <div id="sidebar-content">
 
-        <div class="btn-expandir">
-            <i class="bi bi-list" id="btn-exp"></i>
+        
+        <div id="user">
+            <img src="/Menu/src/images/NexRevolutionRP.png" id="user-nrrp" alt="Logo Nex Revolutionr RP" width="200px">
+
+            <p id="user-info">
+                <span id="item-description">Nex Revolution - RP</span>
+                <span id="item-description">Support NRRP</span>
+            </p>
         </div>
 
-        <ul> 
-            <li class="item-menu ativo">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                    <span class="icon"><i class="bi bi-house-door"></i></span>
-                    <span class="txt-link">Home</span>
-                </a>   
-            </li>
+            <ul id="side-items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-house-door"></i>
+                        <span class="item-description">Home</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-controller"></i>
+                        <span class="item-description">Servidor</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-geo-alt"></i>
+                        <span class="item-description">Mapa do Servidor</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <span class="item-description">Regras</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-clipboard2-check"></i>
+                        <span class="item-description">Atendimento</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-shop"></i>
+                        <span class="item-description">Loja</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-discord"></i>
+                        <span class="item-description">Discord</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span class="item-description">Configurações</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="bi bi-person-circle"></i>
+                        <span class="item-description">Conta</span>
+                    </a>
+                </li>
 
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-controller"></i></span>
-                        <span class="txt-link">Servidor</span>
-                </a>   
-            </li>
-            
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-geo-alt"></i></span>
-                        <span class="txt-link">Mapa do Servidor</span>
-                </a>   
-            </li>
+            </ul>
 
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
-                        <span class="txt-link">Regras</span>
-                </a>   
-            </li>
+            <button id="open-btn">
+                <i id="open-btn-icon" class="bi bi-chevron-right"></i>
+            </button>
 
+        </div>
 
-
-             <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-clipboard2-check"></i></span>
-                        <span class="txt-link">Atendimento</span>
-                </a>   
-            </li>
-
-             <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-shop"></i></span>
-                        <span class="txt-link">Loja Nex Revolution</span>
-                </a>   
-            </li>
-
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-discord"></i></span>
-                        <span class="txt-link">Discord</span>
-                </a>   
-            </li>
-
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-gear"></i></span>
-                        <span class="txt-link">Configurações</span>
-                </a>   
-            </li>
-
-            <li class="item-menu">
-                <a href="#"> <!--Colocar Link do Diretorio da Pagina-->
-                        <span class="icon"><i class="bi bi-person-circle"></i></span>
-                        <span class="txt-link">Conta</span>
-                </a>   
-            </li>
-
-        </ul>
+        <div id="logout">
+            <button id="logout-btn">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span id="item-description">Logout</span>
+            </button>
+        </div>
 
     </nav> 
+
+    <main>
+        <h1>Conteudo</h1>
+    </main>
 
     <script src="/Menu/src/js/menu.js"></script>
 

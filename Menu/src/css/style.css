@@ -1,105 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height: 900vh;
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e3e9f7;
 }
 
-.menu-lateral{
-    width: 80px;
-    height: 100%;
-    background-color: #ff0000;
-    padding: 40px 0 40px 0;
-    overflow: hidden;
-    overflow-y: scroll;
-    
-
+main {
+    padding: 20px;
     position: fixed;
-    top: 0;
-    left: 0;
-
-    transition: .5s;
+    z-index: 1;
+    padding-left: calc(130px + 130px);
 }
 
-.menu-lateral.expandir{
-    width: 300px;
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 0;
 }
 
-.menu-lateral::-webkit-scrollbar{
-    width: 10px;
-    background-color: #cc3737;
-    border-radius: 10px;
+#sidebar-content {
+    padding: 12px;
 }
 
-.menu-lateral::-webkit-scrollbar-thumb{
-    background-color: #b10303;
-    border-radius: 10px;
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
-.btn-expandir{
-    width: 100%;
-    padding-left: 10px;
+#user-nrrp{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
-.btn-expandir > i{
-    color: #C0C0C0;
-    font-size: 24px;
+#user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-info span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
     cursor: pointer;
 }
 
-ul{
-    height: 100%;
-    list-style-type: none;
+.side-item.active {
+    background-color: #e54646;
 }
 
-ul li.item-menu{
-    transition: .2s;
-    align-items: center;
-    white-space: nowrap;
-
-
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #f54e4e;
+    transition: 1s;
 }
 
-ul li.ativo{
-    background-color: #ca2424;
-}
-
-ul li.item-menu:hover{
-    background-color: #cc1010;
-}
-
-ul li.item-menu a{
-    color: #C0C0C0;
+.side-item a {
     text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
     display: flex;
-    margin-bottom: 20px;
-    line-height: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
 }
 
-ul li.item-menu a .txt-link{
-    margin-left: 70px;
-    transition: .5s;
-    opacity: 0;
+.side-item.active a {
+    color: #f7e3e3;
 }
 
-.menu-lateral.expandir .txt-link{
-    margin-left: 40px;
-    opacity: 1;
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
 }
 
-ul li.item-menu a .icon > i{
-    font-size: 30px;
-    margin-left: 5px;
+#logout {
+    border-top: 1px solid #abaeb4;
+    padding: 12px;
 }
 
+#logout-btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open-btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #ff0000;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open-btn-icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open-btn-icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
