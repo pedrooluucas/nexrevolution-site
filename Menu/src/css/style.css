@@ -11,6 +11,13 @@ body {
     display: flex;
     min-height: 100vh;
     background-color: #e3e9f7;
+
+    background-image: url('/Menu/src/images/NexRevolutionRP.png');
+    background-size: contain; /* Ajusta a imagem para caber completamente dentro da área do elemento */
+    background-size: cover; /* Para cobrir todo o espaço */
+    background-attachment: fixed; /* Para manter a imagem fixa ao rolar */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Posiciona a imagem no centro */
 }
 
 main {
@@ -25,10 +32,9 @@ main {
     padding: 20px;
 }
 
-section {
-    background-color: #fff; /* Adicione a cor de fundo desejada */
-    padding: 20px;
-    margin-bottom: 20px; /* Adicione margem inferior para separar as seções */
+#sidebar, main{
+    position: relative; /* Para garantir que os elementos fiquem na frente da imagem de fundo */
+    z-index: 0; /* Garante que os elementos estejam na frente da imagem de fundo */
 }
 
 #sidebar {
@@ -38,7 +44,8 @@ section {
     background-color: aliceblue;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: sticky; 
+    top: 0;
     transition: all .5s;
     min-width: 82px;
     z-index: 1;
@@ -166,4 +173,158 @@ section {
 #sidebar.open-sidebar .side-item a {
     justify-content: flex-start;
     gap: 14px;
+}
+
+/*SECTIONS*/
+
+/*HOME*/
+
+#home .presentation-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .presentation-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#home .presentation-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .presentation-container ul {
+    margin-bottom: 15px;
+}
+
+#home .presentation-container ul li {
+    font-size: 16px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#home .presentation-container p:last-child {
+    margin-bottom: 0;
+}
+
+
+#home .recurses-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .recurses-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .comunidade-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .comunidade-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .suporte-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .suporte-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .desenvolvimento-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .desenvolvimento-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .ajuda-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .ajuda-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .parcerias-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .parcerias-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .desfecho-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .desfecho-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos para a barra de rolagem */
+/* Estilos para navegadores baseados em WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo da área da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fc0000; /* cor da barra de rolagem */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* cor da barra de rolagem quando hover */
 }
