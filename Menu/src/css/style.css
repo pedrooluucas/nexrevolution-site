@@ -197,22 +197,34 @@ main {
     margin-bottom: 15px;
 }
 
-#home .presentation-container ul {
-    margin-bottom: 15px;
-}
-
-#home .presentation-container ul li {
-    font-size: 16px;
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
 #home .presentation-container p:last-child {
     margin-bottom: 0;
 }
 
+#home .intro-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
 
-#home .recurses-container {
+#home .intro-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .intro-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .intro-container p:last-child {
+    margin-bottom: 0;
+}
+
+#home .servidor-container {
     background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
     color: white;
     padding: 20px;
@@ -220,13 +232,22 @@ main {
     margin: 20px 0;
 }
 
-#home .recurses-container h1 {
+#home .servidor-container h1 {
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-#home .comunidade-container {
+#home .servidor-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .servidor-container p:last-child {
+    margin-bottom: 0;
+}
+
+#home .mapa-servidor-container {
     background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
     color: white;
     padding: 20px;
@@ -234,10 +255,42 @@ main {
     margin: 20px 0;
 }
 
-#home .comunidade-container h1 {
+#home .mapa-servidor-container h1 {
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+#home .mapa-servidor-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .mapa-servidor-container p:last-child {
+    margin-bottom: 0;
+}
+
+#home .regras-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#home .regras-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#home .regras-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .regras-container p:last-child {
+    margin-bottom: 0;
 }
 
 #home .suporte-container {
@@ -254,19 +307,15 @@ main {
     justify-content: center;
 }
 
-#home .desenvolvimento-container {
-    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+#home .suporte-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-#home .desenvolvimento-container h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+#home .suporte-container p:last-child {
+    margin-bottom: 0;
 }
+
 
 #home .ajuda-container {
     background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
@@ -280,6 +329,15 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+#home .ajuda-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#home .ajuda-container p:last-child {
+    margin-bottom: 0;
 }
 
 #home .parcerias-container {
@@ -296,19 +354,15 @@ main {
     justify-content: center;
 }
 
-#home .desfecho-container {
-    background-color: rgba(0, 0, 0, 0.6); /* Preto 50% transparente */
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+#home .parcerias-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-#home .desfecho-container h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+#home .parcerias-container p:last-child {
+    margin-bottom: 0;
 }
+
 
 /* Estilos para a barra de rolagem */
 /* Estilos para navegadores baseados em WebKit (Chrome, Safari, Opera) */
