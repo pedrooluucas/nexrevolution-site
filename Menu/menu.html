@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <nav id="sidebar">
+    <nav id="sidebar" class="open-sidebar">
         <div id="sidebar-content">
 
         
@@ -27,56 +27,56 @@
         </div>
 
             <ul id="side-items">
-                <li class="side-item">
-                    <a href="#">
+                <li id="home-item" class="side-item">
+                    <a href="#home">
                         <i class="bi bi-house-door"></i>
                         <span class="item-description">Home</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#servidor">
                         <i class="bi bi-controller"></i>
                         <span class="item-description">Servidor</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#mapa-servidor">
                         <i class="bi bi-geo-alt"></i>
                         <span class="item-description">Mapa do Servidor</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#regras">
                         <i class="bi bi-file-earmark-text"></i>
                         <span class="item-description">Regras</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#atendimento">
                         <i class="bi bi-clipboard2-check"></i>
                         <span class="item-description">Atendimento</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#loja">
                         <i class="bi bi-shop"></i>
                         <span class="item-description">Loja</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#discord">
                         <i class="bi bi-discord"></i>
                         <span class="item-description">Discord</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#configs">
                         <i class="bi bi-gear"></i>
                         <span class="item-description">Configurações</span>
                     </a>
                 </li>
                 <li class="side-item">
-                    <a href="#">
+                    <a href="#conta">
                         <i class="bi bi-person-circle"></i>
                         <span class="item-description">Conta</span>
                     </a>
@@ -84,23 +84,45 @@
 
             </ul>
 
-            <button id="open-btn">
-                <i id="open-btn-icon" class="bi bi-chevron-right"></i>
-            </button>
-
         </div>
 
         <div id="logout">
-            <button id="logout-btn">
+            <a id="logout-btn" href="/index.html">
                 <i class="bi bi-box-arrow-in-right"></i>
-                <span id="item-description">Logout</span>
-            </button>
+                <span>Logout</span>
+            </a>
         </div>
 
     </nav> 
 
     <main>
-        <h1>Conteudo</h1>
+        <section id="home">
+            <h1>Home</h1>
+        </section>
+        <section id="servidor">
+            <h1>Servidor</h1>
+        </section>
+        <section id="mapa-servidor">
+            <h1>Mapa do Servidor</h1>
+        </section>
+        <section id="regras">
+            <h1>Regras</h1>
+        </section>
+        <section id="atendimento">
+            <h1>Atendimento</h1>
+        </section>
+        <section id="loja">
+            <h1>Loja</h1>
+        </section>
+        <section id="discord">
+            <h1>Discord</h1>
+        </section>
+        <section id="configs">
+            <h1>Configurações</h1>
+        </section>
+        <section id="conta">
+            <h1>Conta</h1>
+        </section>
     </main>
 
     <script src="/Menu/src/js/menu.js"></script>
