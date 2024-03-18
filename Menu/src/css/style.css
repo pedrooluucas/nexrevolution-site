@@ -15,9 +15,20 @@ body {
 
 main {
     padding: 20px;
-    position: fixed;
-    z-index: 1;
-    padding-left: calc(130px + 130px);
+    position: relative;
+    z-index: 1; 
+    padding-left: calc(50px + 0px);
+}
+
+main {
+    flex: 1; /* Para ocupar todo o espaço disponível */
+    padding: 20px;
+}
+
+section {
+    background-color: #fff; /* Adicione a cor de fundo desejada */
+    padding: 20px;
+    margin-bottom: 20px; /* Adicione margem inferior para separar as seções */
 }
 
 #sidebar {
@@ -30,7 +41,7 @@ main {
     position: relative;
     transition: all .5s;
     min-width: 82px;
-    z-index: 0;
+    z-index: 1;
 }
 
 #sidebar-content {
@@ -110,7 +121,12 @@ main {
 }
 
 #logout-btn {
+    color: #0a0a0a;
+}
+
+#logout-btn {
     border: none;
+    text-decoration: none;
     padding: 12px;
     font-size: 14px;
     display: flex;
@@ -122,29 +138,14 @@ main {
     background-color: transparent;
 }
 
-#open-btn {
-    position: absolute;
-    top: 30px;
-    right: -10px;
-    background-color: #ff0000;
-    color: #e3e9f7;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    border: none;
-    cursor: pointer;
-}
 
-#open-btn-icon {
-    transition: transform .3s ease;
-}
 
 .open-sidebar #open-btn-icon {
     transform: rotate(180deg);
 }
 
 .item-description {
-    width: 0px;
+    width: 130px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -153,7 +154,7 @@ main {
     height: 0px;
 }
 
-#sidebar.open-sidebar {
+ #sidebar.open-sidebar {
     min-width: 15%;
 }
 
